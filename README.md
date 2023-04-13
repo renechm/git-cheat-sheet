@@ -825,6 +825,8 @@ $ git reset --hard [Commit]
 
 commits bajo el workflow feature branch
 
+```
+
 $ git branch
 $ git branch feature-newstyle
 $ git branch
@@ -833,6 +835,9 @@ $ git checkout feature-newstyle
 $ git status
 $ git branch
 $ git checkout master
+```
+
+```
 
 $ git checkout -b feature-newhomepage
 $ git checkout master
@@ -841,37 +846,57 @@ $ git branch
 $ git branch -d feature-newhome
 $ git branch
 $ git check feature-newstyle
+```
+
+```
 
 $ git add .
 $ git commit "page is style"
 $ git log --oneline --decorate
+```
+
+```
 
 $ git checkout master
 $ git log --oneline --decorate
 $ git ckeckout feature-newstyle
+```
+
+```
 
 $ git checkout master
 $ git checkout -f fix-fecha
 $ git add index.html
-$ git commit "backout index page"
+$ git commit -m "backout index page"
 $ git log --oneline --decorate
 $ git log --oneline --decorate --all
-
+```
 
 como hacer un merge
+```
 
 $ git log  --oneline --decorate --all --graph
 $ git checkout master
 $ git merge fix-fecha
 $ git log --oneline --decorate --all
 $ git merge feature-newstyle
+```
 
 resolver un conflicto en el merge
+
+```
+
 $ git log --oneline --decorate --all --graph
+```
+
 
 acortar los comandos de git
+
+```
+
 $ git config --global alias.tree "log --oneline --decorate --all --graph"
 $ git trees
+```
 
 
 
